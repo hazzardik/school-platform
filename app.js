@@ -363,7 +363,7 @@ function teacherRegister(){
  if(!own.length){toast('Создай демонстрационное мероприятие, затем скачай список');return;}
  const rows=['Мероприятие;Дата;Участник;Класс;Статус'];
  for(const o of own){const members=state.applications.filter(a=>a.oppId===o.id);if(!members.length){rows.push([o.title,dateLabel(o.startsAt),'—','—','Заявок нет'].join(';'));continue}
- for(const a of members){const person=displayPerson(a.personId);rows.push([o.title,dateLabel(o.startsAt),fullname(person),person.grade,a.status].map(x=>String(x).replaceAll(';',',').replaceAll('\n',' ')).join(';'))}}
+ for(const a of members){const person=displayPerson(a.personId);rows.push([o.title,dateLabel(o.startsAt),fullname(person),person.grade,a.status].map(x=>{const safe=String(x).replaceAll(';',',').replaceAll('\n',' ');return /^[\s]*[=+@-]/.test(safe)?"'"+safe:safe;}).join(';'))}}
  downloadLocalFile('uchastniki-meropriyatiy-demo.csv','\uFEFF'+rows.join('\r\n'),'text/csv;charset=utf-8');toast('Список для учителя сохранён (демоданные)');
 }
 
