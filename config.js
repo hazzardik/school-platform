@@ -4,5 +4,5 @@ window.APP_CONFIG = {
   shortName: 'S',
   tagline: 'Твоя школа. Твои люди. Твои возможности.',
   demoSpace: 'Демо-лицей',
-  version: '0.3.0',
+  version: '0.4.0',
 };
