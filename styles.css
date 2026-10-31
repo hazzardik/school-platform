@@ -675,3 +675,97 @@ html[data-theme="dark"] .pick-tag.selected{background:#334c79;border-color:#6989
 .onboarding-inner .welcome-privacy{margin-top:11px}
 .onboarding-form{gap:13px}
 @media(max-width:767px){.interest-picks{max-height:86px}.onboarding-top{margin-bottom:4px}}
+
+
+/* v0.6 messenger, community contributions, admin demo — full responsive dual theme */
+.chat-warning,.admin-warning{display:flex;align-items:flex-start;gap:12px;border-radius:14px;padding:14px 16px;margin:16px 0 20px;font-size:11px;line-height:1.65}
+.chat-warning{background:#edf4ff;border:1px solid #d9e7ff;color:#4b668d}
+.admin-warning{background:#fff5e9;border:1px solid #f4dfc6;color:#95683e}
+.chat-warning strong,.admin-warning strong{font-weight:850}
+.chat-warning>.ico,.admin-warning>.ico{flex:none;width:19px;height:19px}
+.messenger-layout{display:grid;grid-template-columns:minmax(215px,.37fr) minmax(0,1fr);border-radius:19px;border:1px solid #e2e7f2;min-height:550px;overflow:hidden;background:#fff}
+.chat-list{background:#f8faff;border-right:1px solid #e3e8f2;padding:17px 11px}
+.chat-list-title{display:flex;justify-content:space-between;align-items:center;padding:6px 10px 14px;color:#293b58;font-size:14px;font-weight:850}
+.chat-list-title small{color:#75829c;font-size:10px}
+.chat-room{display:flex;align-items:center;gap:11px;border:0;background:transparent;width:100%;padding:14px 10px;border-radius:13px;text-align:left;cursor:pointer;color:#44536a}
+.chat-room:hover{background:#edf1ff}
+.chat-room.active{background:#e8edff;color:#314daa}
+.chat-room-icon{display:flex;align-items:center;justify-content:center;width:38px;height:38px;flex:none;font-size:19px;border-radius:13px;background:#edf1fc}
+.chat-room>span:nth-child(2){display:grid;gap:4px;min-width:0}
+.chat-room strong{font-size:12px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.chat-room small{font-size:10px;color:#92a0b3;line-height:1.4}
+.chat-window{display:flex;flex-direction:column;min-height:540px;min-width:0}
+.chat-window-head{display:flex;align-items:center;gap:12px;border-bottom:1px solid #e9edf3;padding:17px 22px;color:#283a58}
+.chat-window-head>span:nth-child(2){display:grid;gap:3px}
+.chat-window-head strong{font-size:14px}
+.chat-window-head small{font-size:10px;color:#8c9bad}
+.chat-messages{display:flex;flex-direction:column;gap:11px;padding:20px 24px;flex:1;min-height:250px;max-height:420px;overflow:auto;background:#fefeff}
+.chat-bubble{max-width:min(82%,430px);border-radius:17px;padding:12px 15px;box-shadow:0 4px 14px rgba(34,53,93,.03);display:grid;gap:5px}
+.chat-bubble.theirs{align-self:flex-start;background:#f0f3fa;color:#344660;border-bottom-left-radius:4px}
+.chat-bubble.mine{align-self:flex-end;background:#e1eaff;color:#2a416f;border-bottom-right-radius:4px}
+.chat-bubble-author{font-size:9px;font-weight:900;opacity:.75}
+.chat-bubble p{font-size:12px;line-height:1.55;margin:0;overflow-wrap:anywhere}
+.chat-bubble small{font-size:9px;opacity:.55}
+.chat-bubble audio{max-width:100%;width:265px}
+.chat-compose{padding:13px 17px;border-top:1px solid #e8ecf3}
+.chat-compose textarea{width:100%;border:1px solid #e1e7f3;border-radius:12px;background:#f8faff;color:#243757;font:inherit;font-size:12px;min-height:64px;resize:vertical;padding:12px;outline:0}
+.chat-compose textarea:focus{border-color:#91a5f2;box-shadow:0 0 0 3px rgba(90,120,240,.10)}
+.chat-actions{display:flex;justify-content:space-between;gap:10px;margin-top:9px}
+.chat-fineprint{font-size:10px;color:#8d9bb1;padding:0 20px 15px;margin:0;line-height:1.5}
+.impact-hero{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:29px 33px;background:linear-gradient(125deg,#1b2d50,#314e7f);border-radius:21px;color:white;margin:20px 0}
+.impact-hero h2{color:white;font-size:clamp(22px,3vw,35px);letter-spacing:-.8px;margin:9px 0}
+.impact-hero p{font-size:12px;max-width:620px;color:#cbd9f0;line-height:1.7}
+.impact-glow{font-size:75px;color:#c1d8ff}
+.impact-consent{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 21px;border:1px solid #e5ebf3;background:#fff;border-radius:15px;margin:18px 0}
+.impact-consent strong{color:#34415a;font-size:13px}
+.impact-consent p{font-size:11px;color:#8997a9;margin:5px 0 0}
+.impact-board{border:1px solid #e3e9f1;border-radius:18px;overflow:hidden;background:#fff}
+.impact-heading{display:flex;justify-content:space-between;gap:10px;padding:19px 22px;border-bottom:1px solid #e8ecf4}
+.impact-heading strong{font-size:14px;color:#273958}
+.impact-heading span{font-size:10px;color:#8492a9}
+.impact-person{display:flex;gap:13px;align-items:center;padding:14px 20px;border-bottom:1px solid #ecf0f6}
+.impact-person:last-child{border-bottom:0}
+.impact-person.me{background:#f0f4ff}
+.impact-place{font-size:12px;font-weight:900;width:27px;color:#66799c}
+.impact-avatar{background:#e9efff;color:#7085d8;display:grid;place-items:center;width:38px;height:38px;border-radius:13px;font-size:18px}
+.impact-person>div:nth-last-child(2){display:grid;gap:4px;flex:1;min-width:0}
+.impact-person strong{font-size:13px;color:#2c3b57}
+.impact-person small{font-size:10px;color:#90a0b4}
+.impact-points{text-align:right;display:grid;gap:4px}
+.impact-points strong{font-size:19px;color:#5269be}
+.impact-ethics,.admin-roadmap{padding:21px 23px;border-radius:16px;background:#f5f7fd;border:1px solid #e4eafa;margin-top:19px}
+.impact-ethics h3,.admin-roadmap h3{font-size:14px;color:#34445f;margin:0 0 7px}
+.impact-ethics p,.admin-roadmap p{font-size:12px;line-height:1.65;color:#8391a9}
+.admin-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px 0}
+.admin-stats>div{display:grid;gap:4px;background:#fff;border:1px solid #e6ebf4;border-radius:15px;padding:17px 19px}
+.admin-stats strong{font-size:28px;color:#344d82}
+.admin-stats small{font-size:10px;color:#8798ac}
+.admin-work{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.admin-box{background:#fff;border:1px solid #e6ebf4;border-radius:17px;padding:22px;display:flex;flex-direction:column;gap:9px}
+.admin-box h3{font-size:15px;color:#32415d;margin:4px 0}
+.admin-box p{font-size:11px;line-height:1.65;color:#8190a7;flex:1}
+.admin-box .btn{align-self:flex-start}
+html[data-theme="dark"] .chat-warning{background:#1d354d;border-color:#385774;color:#c0d8f2}
+html[data-theme="dark"] .admin-warning{background:#382c25;border-color:#664b37;color:#f3d8b5}
+html[data-theme="dark"] :is(.messenger-layout,.chat-window,.impact-board,.impact-consent,.admin-box,.admin-stats>div){background:#192639;border-color:#354763;color:#edf3ff}
+html[data-theme="dark"] .chat-list{background:#172236;border-color:#35435c}
+html[data-theme="dark"] :is(.chat-list-title,.chat-window-head,.impact-heading strong,.impact-person strong,.impact-consent strong,.admin-box h3,.impact-ethics h3,.admin-roadmap h3){color:#f0f4ff}
+html[data-theme="dark"] .chat-room{color:#b9cbe4}
+html[data-theme="dark"] .chat-room:hover{background:#283953}
+html[data-theme="dark"] .chat-room.active{background:#2f4670;color:#edf3ff}
+html[data-theme="dark"] .chat-room-icon{background:#2a3c59}
+html[data-theme="dark"] .chat-window-head,.chat-compose,.impact-heading,.impact-person{border-color:#34475f}
+html[data-theme="dark"] .chat-messages{background:#131d2c}
+html[data-theme="dark"] .chat-bubble.theirs{background:#26374e;color:#deebfc}
+html[data-theme="dark"] .chat-bubble.mine{background:#304c84;color:#f0f5ff}
+html[data-theme="dark"] .chat-compose textarea{background:#202e44;color:#f0f3ff;border-color:#425773}
+html[data-theme="dark"] :is(.chat-fineprint,.chat-room small,.impact-person small,.impact-consent p,.admin-box p,.admin-stats small){color:#a7b9d1}
+html[data-theme="dark"] .impact-consent{background:#1d2e44}
+html[data-theme="dark"] .impact-board{background:#17263a}
+html[data-theme="dark"] .impact-person.me{background:#293d61}
+html[data-theme="dark"] .impact-avatar{background:#2b466d;color:#c1d8ff}
+html[data-theme="dark"] .impact-points strong{color:#b6c7ff}
+html[data-theme="dark"] :is(.impact-ethics,.admin-roadmap){background:#1c2b42;border-color:#344862}
+html[data-theme="dark"] :is(.impact-ethics p,.admin-roadmap p){color:#b5c4d9}
+@media(max-width:1050px){.admin-work{grid-template-columns:1fr}.admin-stats{gap:8px}.admin-box{padding:18px}}
+@media(max-width:767px){.messenger-layout{grid-template-columns:1fr;border-radius:15px}.chat-list{display:flex;overflow-x:auto;gap:7px;padding:10px;scrollbar-width:thin;border-right:0;border-bottom:1px solid #e5eaf2}.chat-list-title{display:none}.chat-room{width:auto;min-width:120px;flex:none;justify-content:center;padding:10px}.chat-room>span:nth-child(2) small{display:none}.chat-window{min-height:530px}.chat-messages{padding:16px;max-height:350px}.chat-compose{padding:12px}.chat-actions{flex-wrap:wrap}.chat-actions>.btn{flex:1;min-width:130px}.impact-consent{align-items:flex-start;flex-direction:column}.impact-hero{padding:21px}.impact-glow{font-size:52px}.impact-heading{flex-direction:column}.impact-person{padding:12px;gap:8px}.impact-ethics,.admin-roadmap{padding:18px}.admin-stats>div{padding:14px}.admin-stats strong{font-size:21px}}
