@@ -29,6 +29,7 @@ jobs:
           node --check app.js
           node tests/smoke.mjs
           node tests/security-and-plus.mjs
+          node tests/regions-roles-themes.mjs
 
       - name: Prepare static site
         run: |
