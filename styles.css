@@ -639,3 +639,39 @@ html[data-theme="dark"] .plus-teacher-icon{background:#33456e;color:#c1ccff}
 html[data-theme="dark"] .plus-teacher h3{color:#f1f5ff}
 html[data-theme="dark"] .plus-teacher p{color:#b2c1d9}
 @media(max-width:600px){.plus-teacher{padding:17px;gap:11px}.plus-teacher-icon{width:34px;height:34px}}
+
+
+/* v0.6 visual quality: readable notifications and immersive interest onboarding */
+html[data-theme="dark"] .notification-row,
+html[data-theme="dark"] .notification-row.unread{
+ background:#1b293e!important;border:1px solid #30435f!important;color:#f0f5ff!important;
+}
+html[data-theme="dark"] .notification-row.unread{background:#253758!important;border-color:#5472a8!important}
+html[data-theme="dark"] .notification-row strong{color:#f3f7ff!important;opacity:1!important}
+html[data-theme="dark"] .notification-row p{color:#c2d0e8!important;opacity:1!important}
+html[data-theme="dark"] .notification-row small{color:#9dadc9!important;opacity:1!important}
+html[data-theme="dark"] .notification-row .noti-symbol{background:#344770!important;color:#d3e0ff!important}
+html[data-theme="light"] .notification-row{background:#fff;color:#273751}
+html[data-theme="light"] .notification-row strong{color:#263552}
+html[data-theme="light"] .notification-row p{color:#64738e}
+.onboarding-inner{padding:0 0 5px}
+.directory-hint{display:block;color:#7f8da2;font-size:10px;line-height:1.55;margin-top:-8px}
+.interest-area{display:grid;gap:8px;min-width:0}
+.interest-area>strong{color:#384863;font-size:12px}
+.interest-area>small{font-size:10px;color:#94a0b2;line-height:1.55}
+.interest-area input{width:100%;height:44px;background:#f7f9fd;color:#24334f;border:1px solid #dbe2f0;border-radius:12px;padding:11px;font-size:12px;outline:0}
+.interest-area input:focus{border-color:#6a83ec;box-shadow:0 0 0 3px rgba(107,130,235,.16)}
+.interest-picks{display:flex;gap:6px;flex-wrap:wrap;max-height:113px;overflow-y:auto;padding:3px 3px 5px 1px;scrollbar-width:thin}
+.pick-tag{font-size:10px;line-height:1.3;border:1px solid #e2e7f2;background:#f5f7fb;color:#697890;border-radius:100px;padding:7px 10px;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}
+.pick-tag:hover{transform:translateY(-1px);border-color:#8ba1ea;color:#4461cc}
+.pick-tag.selected{background:#e6edff;border-color:#8aa2ff;color:#4867c9;font-weight:750}
+html[data-theme="dark"] .directory-hint{color:#acbad0}
+html[data-theme="dark"] .interest-area>strong{color:#eaf0fa}
+html[data-theme="dark"] .interest-area>small{color:#a1b3cf}
+html[data-theme="dark"] .interest-area input{background:#202d42;border-color:#35475f;color:#eef5ff}
+html[data-theme="dark"] .interest-area input::placeholder{color:#97a7be}
+html[data-theme="dark"] .pick-tag{background:#25354a;border-color:#3c4e69;color:#bed0e8}
+html[data-theme="dark"] .pick-tag.selected{background:#334c79;border-color:#6989cb;color:#f1f5ff}
+.onboarding-inner .welcome-privacy{margin-top:11px}
+.onboarding-form{gap:13px}
+@media(max-width:767px){.interest-picks{max-height:86px}.onboarding-top{margin-bottom:4px}}
