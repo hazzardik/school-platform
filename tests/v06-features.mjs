@@ -33,7 +33,7 @@ const click=(key,value)=>{const b={dataset:{[key]:value},matches(){return false}
 const submit=(id,fields)=>listeners.submit({target:{id,fields},preventDefault(){}});
 function school(part){const key=Object.keys(store).find(x=>x.startsWith('project-s-school-v1:')&&x.includes(part));assert.ok(key,'school store '+part);return JSON.parse(store[key]);}
 
-assert.match(app.innerHTML,/name=\\"first\\"/);
+assert.match(app.innerHTML,/name="first"/);
 assert.match(app.innerHTML,/signup-skills/);
 assert.match(app.innerHTML,/school-suggestions/);
 const onboardingBefore=app.innerHTML;
