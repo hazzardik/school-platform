@@ -34,7 +34,7 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir -p site
-          cp index.html app.js styles.css config.js favicon.svg site/
+          cp index.html app.js styles.css config.js school-directory.js favicon.svg site/
           touch site/.nojekyll
           test -f site/index.html
 
