@@ -482,3 +482,52 @@ body *{visibility:hidden!important}
 .profile-shortcuts small{color:#8995ac;font-size:10px;margin-top:4px}
 .shortcut-icon{width:38px;height:38px;display:grid;place-items:center;border-radius:12px;background:#ebefff;color:#5b70e9;font-size:19px;flex:none}
 @media(max-width:600px){.profile-shortcuts{grid-template-columns:1fr}}
+
+
+/* v0.4 — multi-school onboarding & class filtering */
+.welcome { min-height: 100vh; min-height:100dvh; }
+.welcome-form{align-items:flex-start;overflow-y:visible;padding:clamp(24px,4.4vw,62px) clamp(20px,4vw,62px)}
+.onboarding-inner{width:min(510px,100%);margin:auto}
+.onboarding-inner>p{margin:8px 0 21px;line-height:1.6}
+.onboarding-form{display:grid;gap:13px}
+.onboarding-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.onboarding-label{color:#536079;font-size:11px;font-weight:750;display:flex;flex-direction:column;gap:7px;min-width:0}
+.onboarding-label input,.onboarding-label select{background:#f7f9fd!important;border:1px solid #dbe2f0!important;border-radius:12px!important;color:#23314b!important;outline:0!important;padding:12px 13px!important;width:100%;height:45px;font-size:12px;font-weight:600;min-width:0;transition:box-shadow .18s,border-color .18s}
+.onboarding-label input:focus,.onboarding-label select:focus{border-color:#6a83ec!important;box-shadow:0 0 0 3px rgba(107,130,235,.16)!important}
+.onboarding-label input::placeholder{color:#a9b3c4}
+.onboarding-label input:invalid:not(:placeholder-shown){border-color:#f2a3a3}
+.onboarding-form .onboarding-submit{width:100%;margin-top:3px;min-height:49px;border-radius:12px!important;display:flex;align-items:center;justify-content:center;font-weight:800}
+.onboarding-demo-link{display:block;text-align:center;margin:12px 0 2px;padding:9px;background:transparent;border:0;color:#5d74d9;font-size:12px;font-weight:750;width:100%;text-decoration:underline;text-underline-offset:3px}
+.onboarding-demo-link:hover{color:#273fba}
+.onboarding-inner .welcome-privacy{margin:13px 0 23px;align-items:flex-start}
+.onboarding-inner .welcome-privacy span{font-size:10px;line-height:1.65}
+.onboarding-inner .welcome-privacy .ico{width:16px;height:16px}
+.sidebar-space>div:nth-child(2){min-width:0;flex:1}
+.sidebar-space>div:nth-child(2) strong{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sidebar-space>div:nth-child(2) small:last-child{display:block;margin-top:4px;color:#9bacc2}
+.topbar-location{max-width:60%;min-width:0}
+.topbar-location span:nth-child(2){overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.school-filter{border:1px solid #e3e8f1;background:#fff;color:#4a5c77;min-height:42px;max-width:100%;border-radius:11px;padding:10px 12px;font-size:12px;outline:0}
+.school-filter:focus{border-color:#7c90e7}
+.school-people-caption{background:#f5f7fc;border:1px solid #e9edf5;color:#78869d;padding:11px 14px;border-radius:11px;font-size:11px;line-height:1.5;margin:10px 0 17px}
+@media(min-width:768px) and (max-width:1050px){.welcome{grid-template-columns:1fr 1.05fr}.welcome-story{padding:35px}.welcome-story h1{font-size:clamp(36px,4.6vw,56px);letter-spacing:-2px}.welcome-form{padding:25px}.onboarding-fields{grid-template-columns:1fr}}
+@media(max-width:767px){
+ .welcome{display:flex;flex-direction:column;min-height:100dvh}
+ .welcome-story{padding:26px 23px 30px;min-height:unset}
+ .welcome-main{margin:8px 0 0}
+ .welcome-main h1{font-size:clamp(31px,8.4vw,45px);line-height:1.08;letter-spacing:-1.7px;margin:15px 0 12px}
+ .welcome-story p{font-size:12px;line-height:1.5;margin:0}
+ .welcome-features,.welcome-showcase,.welcome-foot{display:none}
+ .welcome-story .brand{justify-content:flex-start;gap:12px;padding:0 0 9px}
+ .welcome-form{flex:1;display:block;padding:24px 21px 38px}
+ .welcome-inner{width:100%}
+ .onboarding-inner h2{font-size:28px}
+ .onboarding-inner>p{margin:8px 0 18px}
+ .onboarding-form{gap:12px}
+ .onboarding-fields{gap:9px}
+ .onboarding-label input,.onboarding-label select{padding:10px 11px!important}
+ .school-filter{width:100%;flex:1;min-width:110px}
+ .toolbar:has(#grade-filter){gap:9px}
+ .toolbar:has(#grade-filter) .search-wrap{width:100%;max-width:none;flex-basis:100%}
+}
+@media(max-width:385px){.onboarding-fields{grid-template-columns:1fr}.onboarding-form{gap:10px}}
