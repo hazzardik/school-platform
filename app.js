@@ -58,7 +58,10 @@ const demoPeople=[
  {id:'p3',first:'Полина',last:'Грачева',grade:'10Б',bio:'Делаю сайты и участвую в олимпиадах.',skills:['Python','Веб-разработка'],interests:['Программирование','Наука'],tone:''},
  {id:'p4',first:'Марк',last:'Егоров',grade:'11А',bio:'Музыкант и автор небольших школьных проектов.',skills:['Гитара','Звук','Организация'],interests:['Музыка','Медиа'],tone:'warm'},
  {id:'p5',first:'Софья',last:'Левина',grade:'8А',bio:'Люблю биологию, волонтёрство и интересные встречи.',skills:['Презентации','Организация'],interests:['Наука','Волонтёрство'],tone:'alt'},
- {id:'p6',first:'Кирилл',last:'Орлов',grade:'10В',bio:'Придумываю игры и учусь работать в команде.',skills:['Python','Дизайн'],interests:['Игры','Программирование'],tone:''}
+ {id:'p6',first:'Кирилл',last:'Орлов',grade:'10В',bio:'Придумываю игры и учусь работать в команде.',skills:['Python','Дизайн'],interests:['Игры','Программирование'],tone:''},
+ {id:'p7',first:'Ева',last:'Соколова',grade:'7Я',bio:'Интересуюсь театром и школьными событиями.',skills:['Актёрское мастерство','Организация'],interests:['Театр','События'],tone:'alt'},
+ {id:'p8',first:'Артём',last:'Волков',grade:'11Д',bio:'Нравятся физика, технологии и командные проекты.',skills:['Программирование','Робототехника'],interests:['Наука','ИТ'],tone:'warm'},
+ {id:'p9',first:'Дарья',last:'Белова',grade:'7А',bio:'Люблю книги, творчество и волонтёрство.',skills:['Иллюстрация','Презентации'],interests:['Книги','Волонтёрство'],tone:''}
 ];
 function makeSeed(){return {entered:false,role:'student',section:'home',filter:'ALL',sort:'soon',saved:[],plannerWindow:'week',mineTab:'joined',search:'',peopleSearch:'',gradeFilter:'ALL',letterFilter:'ALL',school:null,skillFilter:'Все навыки',user:{first:'Александр',last:'Новиков',grade:'10А',bio:'Люблю технологии, спорт и интересные школьные проекты.',skills:['Презентации','Организация'],interests:['ИТ','Спорт','Бизнес']},opps:[
  {id:'o1',type:'EVENT',title:'Турнир между классами',description:'Собираемся на школьный футбольный турнир. Нужны команды и болельщики. Участие бесплатное.',creator:'p2',startsAt:dateFromNow(1),location:'Спортивная площадка',max:40,skills:['Футбол','Спорт'],joinPolicy:'OPEN',participants:18},
