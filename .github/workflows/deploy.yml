@@ -24,6 +24,12 @@ jobs:
       - name: Get code
         uses: actions/checkout@v4
 
+      - name: Run JavaScript and security checks
+        run: |
+          node --check app.js
+          node tests/smoke.mjs
+          node tests/security-and-plus.mjs
+
       - name: Prepare static site
         run: |
           mkdir -p site
