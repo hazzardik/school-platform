@@ -22,7 +22,7 @@ const SCHOOL_PREFIX='project-s-school-v1:';
 const CLASS_LETTERS=[...'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ'];
 const CITY_SUGGESTIONS=['Москва','Санкт-Петербург','Невинномысск','Ставрополь','Краснодар','Ростов-на-Дону','Казань','Сочи','Екатеринбург','Новосибирск','Самара','Воронеж','Волгоград','Пермь','Уфа','Омск','Красноярск','Тюмень','Нижний Новгород'];
 const REGION_SUGGESTIONS=['Ставропольский край','Краснодарский край','Москва','Московская область','Санкт-Петербург','Ленинградская область','Ростовская область','Республика Татарстан','Свердловская область','Новосибирская область'];
-const scopeText=(v,max=90)=>typeof v==='string'?v.normalize('NFKC').replace(/[\u0000-\u001f\u007f]/g,' ').replace(/\s+/g,' ').trim().slice(0,max):'';
+const scopeText=(v,max=90)=>typeof v==='string'?v.normalize('NFC').replace(/[\u0000-\u001f\u007f]/g,' ').replace(/\s+/g,' ').trim().slice(0,max):'';
 const className=(number,letter)=>Number.isInteger(Number(number))&&Number(number)>=7&&Number(number)<=11&&/^[А-ЯЁ]{1,4}$/u.test(String(letter||'').toUpperCase())?String(number)+String(letter).toUpperCase():'';
 function schoolIdentity(region,city,name){
  const r=scopeText(region,70),c=scopeText(city,70),n=scopeText(name,100);
