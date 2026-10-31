@@ -30,7 +30,7 @@ vm.runInNewContext(source,ctx,{filename:'app.js',timeout:2000});
 assert.doesNotMatch(app.innerHTML,/<img src=x onerror=alert\(1\)>/);
 assert.match(app.innerHTML,/&lt;img src=x onerror=alert\(1\)&gt;/);
 const safeState=JSON.parse(store['project-s-demo-v1']);
-function click(k,value){const btn={dataset:{[k]:value},matches:()=>false,closest(sel){if(sel==='button')return this;const key=sel.match(/^\[data-([^\]]+)\]$/)?.[1]?.replace(/-([a-z])/g,(_,x)=>x.toUpperCase());return key in this.dataset?this:null;}};listeners.click({target:btn});}
+function click(k,value){const btn={dataset:{[k]:value},getAttribute(){return null},matches:()=>false,closest(sel){if(sel==='button')return this;const key=sel.match(/^\[data-([^\]]+)\]$/)?.[1]?.replace(/-([a-z])/g,(_,x)=>x.toUpperCase());return key in this.dataset?this:null;}};listeners.click({target:btn});}
 click('nav','explore');assert.match(app.innerHTML,/kind-project/);assert.doesNotMatch(app.innerHTML,/kind-EVENT"/);
 click('nav','planner');assert.match(app.innerHTML,/Мой план/);assert.match(app.innerHTML,/Добавить в календарь/);
 click('action','download-calendar');assert.equal(downloaded,true);
