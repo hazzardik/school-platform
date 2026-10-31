@@ -628,3 +628,14 @@ html[data-theme="dark"] :is(.filter-row,.tabs){border-color:#2b3e58!important}
  html[data-theme="dark"] .portfolio-paper{background:#fff!important;color:#111!important}
  html[data-theme="dark"] .portfolio-paper *{color:#111!important}
 }
+
+
+.plus-teacher{display:flex;align-items:flex-start;gap:17px;border-radius:18px;border:1px solid #dfe5f5;background:#f5f7ff;padding:23px;margin-top:18px}
+.plus-teacher-icon{flex:none;border-radius:12px;display:grid;place-items:center;width:42px;height:42px;background:#e4ebff;color:#5b6fd8;font-size:24px}
+.plus-teacher h3{font-size:17px;margin:5px 0 8px;color:#263855}
+.plus-teacher p{font-size:12px;line-height:1.65;color:#7e8ca7;max-width:750px}
+html[data-theme="dark"] .plus-teacher{background:#202f49;border-color:#334765}
+html[data-theme="dark"] .plus-teacher-icon{background:#33456e;color:#c1ccff}
+html[data-theme="dark"] .plus-teacher h3{color:#f1f5ff}
+html[data-theme="dark"] .plus-teacher p{color:#b2c1d9}
+@media(max-width:600px){.plus-teacher{padding:17px;gap:11px}.plus-teacher-icon{width:34px;height:34px}}
