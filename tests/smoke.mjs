@@ -9,7 +9,7 @@ const ctx={
  window:{APP_CONFIG:{name:'Проект S',shortName:'S',demoSpace:'Демо-лицей',version:'0.4.0'},scrollTo(){},print(){}},
  document:{title:'',body:{append(){}},createElement(){return {setAttribute(){},remove(){},click(){}}},querySelector(s){return s==='#app'?app:null},addEventListener(n,fn){listeners[n]=fn}},
  localStorage:{getItem:k=>storage[k]??null,setItem(k,v){storage[k]=v},removeItem(k){delete storage[k]}},
- console,Date,Math,crypto:{randomUUID:()=> 'uid-'+Math.random()},
+ console,Date,Math,crypto:{randomUUID:()=> 'uid-'+Math.floor(Math.random()*1e12).toString(36)},
  setTimeout:()=>0,clearTimeout:()=>{},confirm:()=>true,
  FormData:class{constructor(form){this.entriesData=Object.entries(form.fields)}entries(){return this.entriesData[Symbol.iterator]()}},
  Blob:class{},URL:{createObjectURL:()=> 'blob:fake',revokeObjectURL(){}}
